@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BankingSystem>
+    <Bank>
+        <Accounts>
+            <!-- Example of a Bank Account -->
+            <Account id="1">
+                <AccountHolder>John Doe</AccountHolder>
+                <Balance>1000.0</Balance>
+                <Actions>
+                    <Action type="deposit">
+                        <Amount>500.0</Amount>
+                        <Result>Deposited 500.0</Result>
+                    </Action>
+                    <Action type="withdraw">
+                        <Amount>200.0</Amount>
+                        <Result>Withdrew 200.0</Result>
+                    </Action>
+                </Actions>
+            </Account>
+            <Account id="2">
+                <AccountHolder>Jane Smith</AccountHolder>
+                <Balance>1500.0</Balance>
+                <Actions>
+                    <Action type="deposit">
+                        <Amount>700.0</Amount>
+                        <Result>Deposited 700.0</Result>
+                    </Action>
+                </Actions>
+            </Account>
+        </Accounts>
+
+        <!-- Example of a deleted account -->
+        <DeletedAccounts>
+            <Account id="3">
+                <AccountHolder>James Brown</AccountHolder>
+                <Balance>200.0</Balance>
+                <Action type="delete">
+                    <Result>Account ID 3 deleted</Result>
+                </Action>
+            </Account>
+        </DeletedAccounts>
+    </Bank>
+</BankingSystem>
